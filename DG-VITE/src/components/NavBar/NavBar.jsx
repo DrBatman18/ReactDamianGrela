@@ -5,6 +5,8 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import "./NavBar.css"
+import Logo from "../../images/Logo.png"
+import Carrito from "../../images/Carrito.png"
 
 
 function NavBar() {
@@ -14,12 +16,12 @@ function NavBar() {
 
 <Navbar bg="dark" variant="dark">
       <Container fluid>
-        
-        <Navbar.Brand href="#">Encontralo ONLINE</Navbar.Brand>
+        <img src={Logo} alt="logo" className='logo' /> 
+        <Navbar.Brand  href="#">Encontralo ONLINE</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
-            className="me-auto my-2 my-lg-0"
+            className="me-auto my-2 y-lg-0"
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
@@ -37,7 +39,7 @@ function NavBar() {
             </NavDropdown>           
           </Nav>
           <Button variant="outline-success">5</Button>             
-          <Button variant="outline-success">Carrito</Button>        
+           <img className="img-carrito" src={Carrito} alt="carrito" />  
         </Navbar.Collapse>
       </Container>
     </Navbar>

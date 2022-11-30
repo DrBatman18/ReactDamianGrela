@@ -1,0 +1,12 @@
+.img-carrito{
+    object-fit: contain;
+    height: 35px;
+    margin: 1% 2% 1% 2%;
+}
+
+.logo{
+    object-fit: contain;
+    height: 70px;    
+    margin: 0% 2% 0% 2%;
+}
+
